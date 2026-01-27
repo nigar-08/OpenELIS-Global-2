@@ -62,7 +62,8 @@
     "check-format": "prettier ./ --check",
     "cy:quick": "cypress run --browser electron --config video=false,defaultCommandTimeout=10000",
     "cy:single": "cypress run --browser electron --config video=false,defaultCommandTimeout=10000 --spec",
-    "cy:debug": "ELECTRON_ENABLE_LOGGING=1 cypress run --browser electron --config video=false,defaultCommandTimeout=10000"
+    "cy:debug": "ELECTRON_ENABLE_LOGGING=1 cypress run --browser electron --config video=false,defaultCommandTimeout=10000",
+    "prepare": "husky"
   },
   "jest": {
     "transformIgnorePatterns": [
@@ -103,6 +104,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^9.1.7",
     "prettier": "^3.4.2",
     "prettier-eslint": "15.0.1"
   }
